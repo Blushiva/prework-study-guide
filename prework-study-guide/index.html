@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="stylesheet" href="./assets/style.css">
+  <link rel="script" href=".assets/script.js">
 
   <title>Prework Study Guide</title>
 
@@ -16,8 +17,13 @@
 <body>
 
   <header id="top">
+
     <h1>Prework Study Guide</h1>
+
     <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+
+    <h2>✨ Open the Console to See What's Happening ✨</h2>
+
   </header>
 
   <main>
@@ -227,6 +233,142 @@
         <h2>JavaScript</h2>
         <ul>
           <li>Enter your JavaScript notes here</li>
+
+          <li>A variable is a named container that allows us to store data in our code.</li>
+
+          <li>Control flow is the order in which a computer executes code in a script.</li>
+
+          <li>The .js file extension indicates that this file is a JavaScript file.
+
+          <li>In coding parlance, a variable is simply a named container that allows us to store data in our code.</li>
+
+          <li>To declare a variable in JavaScript, we have a few different options. Prior to more recent changes to
+            JavaScript, we
+            used the var keyword to create a variable in our code. You may see var from time to time, and it's a valid
+            part of
+            JavaScript, but it's important to note that all modern JavaScript uses new syntax, so we should avoid using
+            var.</li>
+
+          <li>The first variable keyword we might use is CONST. The const keyword allows us to create variables that
+            can't be
+            reassigned a value. It essentially "locks down" what that variable will be, and once we declare it, we can
+            never
+            reassign it. When writing JavaScript, we always want to start by declaring variables using const. The second
+            variable
+            keyword we might use is let. Finally, we use an assignment operator = to assign the specific data that we
+            want stored in our variable. In the example
+            involving a container named "shape" that stores a circle, we can express that in JavaScript as follows:
+            const shape = "circle";
+          </li>
+          <li>Let's take a closer look at console.log. The word console refers to a test environment that developers use
+            to check out
+            their code. The second part, .log(), is a method, which means a set of instructions that can be executed by
+            a computer.
+            The .log() method will output whatever we add inside the parentheses to the console. To learn more about
+            console.log,
+            you can visit the MDN Web Docs on console.log Links to an external site..</li>
+          </li>
+
+          <li>What exactly do we mean by “truthy” and “falsy” in Javascript? A value is considered falsy if it is one of
+            the following
+            values: 0, -0, On, "", null, undefined, NaN, or a Boolean data type with the value of false. All other
+            values, including
+            a Boolean with the value of true, are considered truthy. To learn more about truthy and falsy values, visit
+            the MDN Web
+            Docs on truthy Links to an external site..</li>
+
+          <li>An array is a single variable that is used to hold a group of data.
+            Arrays are typically used to hold data that is related in some way.</li>
+
+          <li>To create an array, we declare a variable in the same way that we declared a variable with only one data
+            item. That is,
+            we use const and then give the variable a name. However, instead of assigning the variable to a single
+            value, we assign
+            the variable to a group of values. The following variable declaration
+            demonstrates how we would represent our group of shapes in an array
+            named shapes:const shapes = ["triangle", "square", "pentagon", "circle"];
+          </li>
+
+          <li>Arrays are not limited to contain only a single type of data. A
+            single array can store different types of data, such as strings,
+            numbers, and so on.</li>
+
+          <li>The following array stores information about a student named Lu, including his name, age, and whether he
+            is currently
+            enrolled:
+            const studentInfo = ["Lu", 54, true]; Notice that only the student's
+            name, "Lu", is surrounded by quotation marks. That is because Lu is a
+            string, and strings need to be contained within quotation marks. Since
+            54 is a number and true is a Boolean value, no quotation marks are
+            necessary for those values. As you can see, this array contains a
+            string, a number, and a Boolean value.</li>
+
+          <li>Arrays are useful tools for storing multiple items with different data types in a single variable, but not
+            all arrays
+            must have multiple data types.</li>
+
+          <li>To work with individual data items inside an array, we need to have one more piece of information: the
+            location of the
+            data item in the array. This location is identified with a unique number called an index. Using each piece
+            of data's
+            index, or location number, we can access individual data inside the array.</li>
+
+          <li>In JavaScript and many other programming languages, arrays are zero-indexed and sequential. This means
+            that the first
+            item in any array has an index of 0, not 1. The indices, or location identifiers, will always be whole
+            numbers that
+            increase by 1 each time.</li>
+
+          <li>A for loop uses the predictable pattern of indices to perform a task on all the items in an array by
+            allowing a single
+            code block to be executed over and over. Developers must use another statement, such as the conditional if
+            statement
+            that we just learned, to interrupt the control flow by executing a block of code a specific number of times.
+          </li>
+
+          <li>But what if we wanted to reassign the value of the variable over time?
+            This is where we would use the let keyword. Just like with const, we use let, followed by a unique variable
+            name and the
+            assignment operator = to assign the specific data that we want stored in our variable. However, unlike with
+            const, let
+            allows us to reassign the value of the variable over time. This is especially important in cases where we
+            need to use
+            the variable to store changing values, like when iterating over an array using a for loop.</li>
+
+          <li>A for loop contains the following three important statements:
+            The first statement determines the starting point for our loop. Since we want to start at the beginning of
+            the array, we
+            declare a variable x and give it a value of 0 (because the first index of an array is always 0), as shown in
+            the
+            following line of code:
+            let x = 0;
+            The second statement is the condition. As long as the number in the variable x is less than the length of
+            the array, the
+            loop will keep running. This will allow the loop to execute one time for each item in the array. We use the
+            length
+            built-in array property on our shapes array to express that condition, as shown in the following line of
+            code:
+            x < shapes.length; The final statement is what allows the array to iterate over each item. Since indices
+              follow a predictable pattern, we know the number increases by 1 each time. The code x++ is a shortcut way
+              of writing x+1. Now every time the code loops, x will increase by 1, as shown in the following line of
+              code: x++ </li>
+
+          <li>Commenting out code makes it inactive without deleting it, just in
+            case you need it later. To comment out multiple lines
+            of JavaScript code, put /* before and */ after the block of code</li>
+
+          <li>a function is simply a set of instructions that tells the computer how to perform a certain task.
+            A function is different from a for loop or conditional statement because functions do not automatically
+            execute when the
+            JavaScript file (in our case, script.js) is run. Instead, you must call a function by name in order to
+            execute it. While
+            that may seem like extra work, having a block of code that executes only when we call it makes the code more
+            easily
+            reusable, because we can call it as many times as we need. Being able to call a function to execute it also
+            means you
+            can control where in the control flow a task is executed, or if it is executed at all.</li>
+
+          <li></li>
         </ul>
       </section>
 
@@ -237,6 +379,8 @@
   <footer>
     <p>I can code!</p>
   </footer>
+
+  <script src="./assets/script.js"></script>
 
 </body>
 
