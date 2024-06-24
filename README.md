@@ -12,8 +12,6 @@ Boot Camp Prework Study Guide for Students
 - Upon completion of these notes, I have built a good outline of what an HTML website consists of. I have learned some HTML, Javascript, CSS, and GIT. When I started I knew nothing, I was brand new to coding.
 
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
